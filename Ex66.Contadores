@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(){
+    int a, b, soma = 0, inicio, fim;
+
+    printf("Digite o primeiro valor: ");
+    scanf("%d", &a);
+
+    printf("Digite o segundo valor: ");
+    scanf("%d", &b);
+
+    if(a < b){
+        inicio = a;
+        fim = b;
+    } else {
+        inicio = b;
+        fim = a;
+    }
+
+    for(int i = inicio; i <= fim; i++){
+        soma += i;
+    }
+
+    printf("Soma: %d\n", soma);
+}
